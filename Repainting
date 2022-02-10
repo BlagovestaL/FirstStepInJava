@@ -1,0 +1,29 @@
+package first.steps.in.coding.exe;
+
+import java.util.Scanner;
+
+public class p06Repainting {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int nai = Integer.parseInt(scanner.nextLine()); //nailon
+        int paint = Integer.parseInt(scanner.nextLine()); //boq
+        int raz = Integer.parseInt(scanner.nextLine()); //razreditel
+        int hour = Integer.parseInt(scanner.nextLine()); //chasovemaiztori
+
+
+        double na = ( nai + 2 ) * 1.50;
+        double pa = (paint + (paint * 0.1)) * 14.50;
+        double ra = raz * 5.00;
+        double tor = 0.40; //torba
+        double all = na + pa + ra + tor ; // materiali
+
+        double rent = (all * 0.3) * hour ; //maistori
+        double thatAll =  all + rent; // materiali i maistori
+
+        System.out.println( thatAll);
+
+
+
+    }
+}
