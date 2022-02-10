@@ -1,0 +1,21 @@
+package first.steps.in.coding.exe;
+
+import java.util.Scanner;
+
+public class p03DepositCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in) ;
+
+        double depositSum = Double.parseDouble(scanner.nextLine());
+        int month = Integer.parseInt(scanner.nextLine());
+        double interestRate = Double.parseDouble(scanner.nextLine());
+
+
+        double perMonth  = depositSum *  (interestRate/100) / 12;
+        double totalSum = depositSum + month * perMonth;
+
+
+        System.out.println(totalSum);
+
+    }
+}
