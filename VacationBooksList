@@ -1,0 +1,19 @@
+package first.steps.in.coding.exe;
+
+import java.util.Scanner;
+
+public class p04VacationBooksList {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int page = Integer.parseInt(scanner.nextLine());
+        int hp = Integer.parseInt(scanner.nextLine());
+        int days = Integer.parseInt(scanner.nextLine());
+
+        int all = page / hp ;
+
+        System.out.println( all / days);
+
+
+    }
+}
