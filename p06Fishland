@@ -1,0 +1,29 @@
+package first.steps.in.coding.MoreEXE;
+
+import java.util.Scanner;
+
+public class p06Fishland {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        double priceScumKg = Double.parseDouble(scanner.nextLine());
+        double priceCacaKg = Double.parseDouble(scanner.nextLine());
+        double pricePalaKg = Double.parseDouble(scanner.nextLine());
+        double priceSafKg = Double.parseDouble(scanner.nextLine());
+        int midiKg = Integer.parseInt(scanner.nextLine());
+
+        double palaPrice=priceScumKg+priceScumKg* 0.6;
+        double pala = pricePalaKg*palaPrice;
+
+        double safPrice = priceCacaKg + priceCacaKg*0.8;
+        double saf = priceSafKg*safPrice;
+
+        midiKg*=7.50;
+
+        System.out.printf("%.2f",pala+saf+midiKg);
+
+
+
+
+    }
+}
