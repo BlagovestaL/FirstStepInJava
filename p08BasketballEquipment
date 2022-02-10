@@ -1,0 +1,18 @@
+package first.steps.in.coding.exe;
+
+import java.util.Scanner;
+
+public class p08BasketballEquipment {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int yearTax = Integer.parseInt(scanner.nextLine());
+
+        double shoes = yearTax - (yearTax * 0.4);
+        double clothes = shoes - (shoes * 0.2);
+        double ball = clothes * 0.25;
+        double ac = ball * 0.2;
+
+        System.out.println(yearTax + shoes + clothes+ball+ac);
+    }
+}
