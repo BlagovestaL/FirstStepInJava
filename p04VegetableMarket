@@ -1,0 +1,20 @@
+package first.steps.in.coding.MoreEXE;
+
+import java.util.Scanner;
+
+public class p04VegetableMarket {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        double priceVeg = Double.parseDouble(scanner.nextLine());
+        double priceFru = Double.parseDouble(scanner.nextLine());
+        int kgVeg = Integer.parseInt(scanner.nextLine());
+        int kgFru = Integer.parseInt(scanner.nextLine());
+
+        double a = priceVeg * kgVeg;
+        double b = priceFru * kgFru;
+        double c = a + b ;
+
+        System.out.format("%.2f", c / 1.94);
+    }
+}
