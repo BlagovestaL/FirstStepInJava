@@ -1,0 +1,26 @@
+package first.steps.in.coding.exe;
+
+import java.util.Scanner;
+
+public class p07FoodDelivery {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int chicken = Integer.parseInt(scanner.nextLine());
+        int fish = Integer.parseInt(scanner.nextLine());
+        int vegan = Integer.parseInt(scanner.nextLine());
+
+        double chic = chicken * 10.35;
+        double fi = fish * 12.40;
+        double veg = vegan * 8.15;
+
+        double all = (chic + fi + veg) ;
+        double dost = 2.50;
+        double that = all + (all * 0.2) + dost;
+
+
+
+        System.out.println(that);
+
+    }
+}
