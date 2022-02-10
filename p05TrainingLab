@@ -1,0 +1,24 @@
+package first.steps.in.coding.MoreEXE;
+
+import java.util.Scanner;
+
+public class p05TrainingLab {
+    public static void main(String[] args) {
+        Scanner scanner= new Scanner(System.in);
+
+        double w = Integer.parseInt(scanner.nextLine());
+        double h = Integer.parseInt(scanner.nextLine());
+
+        double a = h - 0.1;
+        double b = a / 0.7;
+        double aa = w - 120;
+
+        double c = b * aa - 3;
+
+
+        System.out.println(c);
+
+
+
+    }
+}
