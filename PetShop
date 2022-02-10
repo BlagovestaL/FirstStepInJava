@@ -1,0 +1,18 @@
+package first.steps.in.coding.lab;
+
+import java.util.Scanner;
+
+public class p08PetShop {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner (System.in) ;
+
+        int a = Integer.parseInt(scanner.nextLine()) ; // food dog
+        double b= a * 2.5; //dog
+        int c = Integer.parseInt(scanner.nextLine()) ; // food cat
+        double d = c * 4 ; //cat
+
+        System.out.println(b + d + " lv" + ".");
+
+    }
+
+}
