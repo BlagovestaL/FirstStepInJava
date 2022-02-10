@@ -1,0 +1,33 @@
+package first.steps.in.coding.MoreEXE;
+
+import java.util.Scanner;
+
+public class p07HousePainting {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        double x = Double.parseDouble(scanner.nextLine());
+        double y = Double.parseDouble(scanner.nextLine());
+        double h = Double.parseDouble(scanner.nextLine());
+
+        double strSten = x * y;
+        double window = 1.5*1.5;
+        double doubleStr = 2*strSten - 2*window;
+        double zad = x*x;
+        double enter = 2*1.2;
+        double totalZadEnter = 2*zad-enter;
+        double total = doubleStr + totalZadEnter;
+        double greenPaint = total/3.4;
+
+        double doublePrav = 2*(x*y);
+        double doubleTri = 2*(x*h/2);
+        double totalPlos = doublePrav+doubleTri;
+        double redPaint = totalPlos/4.3;
+
+        System.out.printf("%.2f",greenPaint);
+
+        System.out.printf("%.2f",redPaint);
+
+
+    }
+}
