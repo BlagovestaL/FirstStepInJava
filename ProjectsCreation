@@ -1,0 +1,17 @@
+package first.steps.in.coding.lab;
+
+import java.util.Scanner;
+
+public class p07ProjectsCreation {
+public static void main (String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    String name = scanner.nextLine();
+    int a = Integer.parseInt(scanner.nextLine());//project
+    int b = a * 3 ; // hours
+
+
+
+    System.out.println(" The architect " + name + " will need " + b + " hours to complete " + a + " project/s" + ".");
+}
+}
