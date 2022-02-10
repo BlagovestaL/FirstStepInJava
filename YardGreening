@@ -1,0 +1,19 @@
+package first.steps.in.coding.lab;
+
+import java.util.Scanner;
+
+public class p09YardGreening {
+    public static void main (String[] args){
+        Scanner scanner = new Scanner(System.in) ;
+
+        double metre = Double.parseDouble(scanner.nextLine()) ;
+        double a = metre * 7.61 ;
+        double b = a * 0.18 ;
+        double c = a - b ;
+
+
+
+        System.out.println( "The final price is" + ":" + c ) ;
+        System.out.println("The discount is" + ":" + b );
+    }
+}
