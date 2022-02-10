@@ -1,0 +1,22 @@
+package first.steps.in.coding.exe;
+
+import java.util.Scanner;
+
+public class p09FishTank {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int sm = Integer.parseInt(scanner.nextLine());
+        int shir = Integer.parseInt(scanner.nextLine());
+        int h = Integer.parseInt(scanner.nextLine());
+        double pro = Double.parseDouble(scanner.nextLine());
+
+        double pi = sm * shir * h ;
+        double ti = pi/1000;
+        double pr = pro/100;
+        double u = ti * (1-pr);
+
+        System.out.println(u);
+
+    }
+}
